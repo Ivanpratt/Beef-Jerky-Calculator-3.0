@@ -506,10 +506,10 @@ let printRecipe = function() {
         } else if (stepCounter === 3) {
 
             steptext = `Gather the ingredients you have selected for your Jerky: `
-            jerkyObject.Baseingredients.forEach(element => steptext += element[1] + ' ' + element[2] + ' ' + element[0] + ', ')
-            jerkyObject.Postingredients.forEach(element => steptext += element[1] + ' ' + element[2] + ' ' + element[0] + ', ')
-            jerkyObject.Spice.forEach(element => steptext += element[1] + ' ' + element[2] + ' ' + element[0] + ', ')
-            jerkyObject.Sugar.forEach(element => steptext += element[1] + ' ' + element[2] + ' ' + element[0] + ', ')
+            jerkyObject.Baseingredients.forEach(element => steptext += element[1].toFixed(2) + ' ' + element[2] + ' ' + element[0] + ', ')
+            jerkyObject.Postingredients.forEach(element => steptext += element[1].toFixed(2) + ' ' + element[2] + ' ' + element[0] + ', ')
+            jerkyObject.Spice.forEach(element => steptext += element[1] + ' ' + element[2].toFixed(3) + ' ' + element[0] + ', ')
+            jerkyObject.Sugar.forEach(element => steptext += element[1] + ' ' + element[2].toFixed(2) + ' ' + element[0] + ', ')
         } else if (stepCounter === 4) {
             steptext = `On a stovetop, place all of your ingredients(Base Ingredients, Post Ingredients, Spices and/or Sugars) into your Medium Pot or Saucepan. Turn on the stove and raise the temperature high enough for the pot/saucepan to maintain a light simmer. (Note - Stronger simmering and boiling can BURN the ingredients, so keep the simmer as low as possible). Simmer the ingredients together for approximately 10 minutes or until the amount of liquid has reduced by half. Stir regularly. `
         } else if (stepCounter === 5) {
