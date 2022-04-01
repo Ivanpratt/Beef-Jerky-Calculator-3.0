@@ -16,15 +16,15 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../Public/Index.html'))
 })
 
-app.get('/', (req, res) => {
+app.get('/styles', (req, res) => {
     res.sendFile(path.join(__dirname, '../Public/Index.css'))
 })
 
-app.get('/', (req, res) => {
+app.get('/javascript', (req, res) => {
     res.sendFile(path.join(__dirname, '../Public/Index.js'))
 })
 
-app.get('/', (req, res) => {
+app.get('/jerkyimage', (req, res) => {
     res.sendFile(path.join(__dirname, '../Public/Jerky.webp'))
 })
 
