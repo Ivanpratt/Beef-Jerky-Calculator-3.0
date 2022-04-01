@@ -663,6 +663,7 @@ meatmanualinput.addEventListener('change', ()=> {
 })
 
 submitbutton2.addEventListener('click', () => {
+    stepCounter = 0
     updateList()
     printRecipe()
 })
