@@ -327,6 +327,7 @@ form {
 .recipeItem {
     max-width: 30.13%;
     min-width: 30.13%;
+    height: 460px;
     background-color:rgb(248, 247, 247);
     border-radius: 10px;
     font-size: 25px;
