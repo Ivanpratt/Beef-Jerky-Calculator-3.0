@@ -16,6 +16,18 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../Public/Index.html'))
 })
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Public/Index.css'))
+})
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Public/Index.js'))
+})
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Public/Jerky.webp'))
+})
+
 app.post('/api/data', (req, res) => {
     objectArray.push(req.body)
     console.log(objectArray)
